@@ -116,15 +116,40 @@ const Header = () => {
       {mobileNavbarToggle && (
         <section
           className="block lg:hidden"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos={`${!mobileNavbarToggle ? "fade-up" : "fade-down"} `}
+          data-aos-duration="2000"
         >
           <ul className="navbar-ul bg-[#c1eef0] text-center">
-            <li className="font-semibold">Home</li>
-            <li className="font-semibold">About</li>
-            <li className="font-semibold">Blogs</li>
-            <li className="font-semibold">Shop</li>
-            <li className="font-semibold">Contact</li>
+            <li className="font-semibold">
+              <Link href="/" key={pathname.name}>
+                {" "}
+                HOME
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link href="/about" key={pathname.name}>
+                {" "}
+                ABOUT
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link href="/blog" key={pathname.name}>
+                {" "}
+                BLOG
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link href="/shop" key={pathname.name}>
+                {" "}
+                SHOP
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link href="/contact" key={pathname.name}>
+                {" "}
+                CONTACT
+              </Link>
+            </li>
           </ul>
         </section>
       )}
