@@ -57,7 +57,6 @@ const Header = () => {
               }
             >
               <Link href="/about" key={pathname.name}>
-                {" "}
                 ABOUT
               </Link>
             </li>
@@ -77,7 +76,7 @@ const Header = () => {
         </section>
         <section>
           <ul className="flex justify-center items-center">
-            <li className="lg:font-bold font-semibold">
+            <li className="lg:font-bold hidden lg:block font-semibold">
               <Link href="/login" key={pathname.name}>
                 {" "}
                 LOGIN
@@ -148,6 +147,12 @@ const Header = () => {
               <Link href="/contact" key={pathname.name}>
                 {" "}
                 CONTACT
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link href="/login" key={pathname.name}>
+                {" "}
+                LOGIN
               </Link>
             </li>
           </ul>
