@@ -4,7 +4,6 @@ import Header from "../shared/Header";
 const page = () => {
   return (
     <>
-      <Header></Header>
       <h1>Shop</h1>
     </>
   );
