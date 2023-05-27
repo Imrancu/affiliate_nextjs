@@ -1,4 +1,5 @@
 import "./globals.css";
+import Footer from "./shared/Footer";
 import Header from "./shared/Header";
 
 export const metadata = {
@@ -9,9 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="scrollbar-y-hidden">
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
