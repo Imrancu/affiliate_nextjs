@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import "../globals.css";
 import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
@@ -23,7 +24,9 @@ const Header = () => {
           <ul className="flex justify-evenly items-center space-x-12">
             <li
               className={
-                pathname === "/" ? "nav-color font-bold" : " font-semibold"
+                pathname === "/"
+                  ? "text-primary font-bold border-b-2 border-primary"
+                  : " font-semibold hover:text-primary hover:border-b-2 hover:border-primary"
               }
             >
               <Link href="/" key={pathname.name}>
@@ -33,7 +36,9 @@ const Header = () => {
             </li>
             <li
               className={
-                pathname === "/blog" ? "nav-color font-bold" : "font-semibold"
+                pathname === "/blog"
+                  ? "text-primary font-bold border-b-2 border-primary"
+                  : " font-semibold hover:text-primary hover:border-b-2 hover:border-primary"
               }
             >
               <Link href="/blog" key={pathname.name}>
@@ -43,7 +48,9 @@ const Header = () => {
             </li>
             <li
               className={
-                pathname === "/shop" ? "nav-color font-bold" : "font-semibold"
+                pathname === "/shop"
+                  ? "text-primary font-bold border-b-2 border-primary"
+                  : " font-semibold hover:text-primary hover:border-b-2 hover:border-primary"
               }
             >
               <Link href="/shop" key={pathname.name}>
@@ -53,7 +60,9 @@ const Header = () => {
             </li>
             <li
               className={
-                pathname === "/about" ? "nav-color font-bold" : "font-semibold"
+                pathname === "/about"
+                  ? "text-primary font-bold border-b-2 border-primary"
+                  : " font-semibold hover:text-primary hover:border-b-2 hover:border-primary"
               }
             >
               <Link href="/about" key={pathname.name}>
@@ -63,8 +72,8 @@ const Header = () => {
             <li
               className={
                 pathname === "/contact"
-                  ? "nav-color font-bold"
-                  : "font-semibold"
+                  ? "text-primary font-bold border-b-2 border-primary"
+                  : " font-semibold hover:text-primary hover:border-b-2 hover:border-primary"
               }
             >
               <Link href="/contact" key={pathname.name}>
@@ -93,7 +102,7 @@ const Header = () => {
                     data-aos-duration="1000"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    fill="#3638C8"
+                    fill="text-primary"
                     width="24"
                     height="24"
                   >
@@ -104,7 +113,7 @@ const Header = () => {
                   <RxCross2
                     data-aos="flip-right"
                     data-aos-duration="1000"
-                    className="text-[#3638C8] font-semibold text-2xl"
+                    className="text-primary font-semibold text-2xl"
                   ></RxCross2>
                 )}
               </button>
@@ -114,12 +123,12 @@ const Header = () => {
       </div>
       {mobileNavbarToggle && (
         <section
-          className="block lg:hidden"
+          className="block lg:hidden relative"
           data-aos={`${!mobileNavbarToggle ? "fade-up" : "fade-down"} `}
           data-aos-duration="2000"
         >
-          <ul className="navbar-ul bg-[#c1eef0] text-center">
-            <li className="font-semibold">
+          <ul className="navbar-ul absolute top-0 w-full bg-[#5F2476] text-center text-primary ">
+            <li className="font-semibold ">
               <Link href="/" key={pathname.name}>
                 {" "}
                 HOME
