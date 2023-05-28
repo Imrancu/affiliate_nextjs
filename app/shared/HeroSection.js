@@ -32,7 +32,7 @@ const HeroSection = () => {
   );
 
   return (
-    <div className="lg:flex lg:justify-between lg:items-center w-full lg:px-10 px-5 lg:py-20 py-7 bg-gradient-to-r from-secondary to-midnight">
+    <div className="lg:flex lg:justify-between  lg:items-center w-full lg:px-10 px-5 lg:py-20 py-7 bg-gradient-to-r from-secondary to-midnight">
       <div className="lg:w-1/2">
         <h1 className="text-5xl leading-snug text-color tracking-wide">
           We Make Better{" "}
