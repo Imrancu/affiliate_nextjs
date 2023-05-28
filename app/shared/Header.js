@@ -8,10 +8,10 @@ import { RxCross2 } from "react-icons/rx";
 const Header = () => {
   const pathname = usePathname();
   const [mobileNavbarToggle, setMobileNavbarToggle] = useState(false);
-  // console.log(pathname);
+
   return (
     <header>
-      <div className="flex justify-between  items-center shadow-lg lg:h-12 h-10 w-full lg:px-10 px-5 lg:py-10 py-7 text-stone-900 bg-white">
+      <div className="flex justify-between backdrop-blur-sm static top-0  items-center shadow-lg lg:h-12 h-10 w-full lg:px-10 px-5 lg:py-10 py-7 text-stone-900 bg-white">
         <section>
           <h1 className="lg:text-xl text-lg">
             <Link href="/" key={pathname.name}>
