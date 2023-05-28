@@ -1,16 +1,14 @@
 "use client";
 
 import AOS from "aos";
-import "aos/dist/aos.css"; 
-import HeroSection from "./shared/HeroSection";
-import Testimonial from "@/components/Testimonial";
+import "aos/dist/aos.css";
+import Home from "./Home/Home";
 // ..
 AOS.init();
-export default function Home() {
+export default function page() {
   return (
     <>
-      <HeroSection></HeroSection>
-      {/* <Testimonial></Testimonial> */}
+      <Home></Home>
     </>
   );
 }
