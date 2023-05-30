@@ -1,19 +1,23 @@
 import React from "react";
 import LatestNews from "./LatestNews";
 import BestSellingOnAmazon from "./BestSellingOnAmazon";
+import HeroSection from "../shared/HeroSection";
+import Testimonial from "@/components/Testimonial";
 
 const Home = () => {
   return (
-    <div className="lg:px-16 px-8 ">
-      <div className="lg:my-10 my-5">
+    <div>
+      <HeroSection></HeroSection>
+      <div className="lg:px-10 px-8">
+      <div className="lg:my-10">
         <LatestNews></LatestNews>
       </div>
       <div className="lg:my-10">
-        <h1 className="text-gradient-to-r from-secondary to-purple lg:text-5xl text-xl lg:my-8 my-2 font-bold">
-          BEST SELLING ON AMAZON
-        </h1>
+      <h2 class="text-3xl font-semibold mb-12 text-center">Best <span className='text-primary font-bold'>Selling On</span> Amazon</h2>
         <BestSellingOnAmazon></BestSellingOnAmazon>
       </div>
+    </div>
+    <Testimonial></Testimonial>
     </div>
   );
 };

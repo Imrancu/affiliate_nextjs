@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="scrollbar-y-hidden">
+      <body>
         <Header></Header>
         {children}
         <Footer></Footer>
