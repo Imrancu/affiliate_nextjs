@@ -3,10 +3,6 @@ import React from "react";
 const LatestNews = () => {
   return (
     <div>
-      <h1 className="text-primary lg:text-5xl text-xl lg:my-8 my-4 font-bold">
-        LATEST NEWS...{" "}
-      </h1>
-      <section className="lg:flex justify-evenly items-center lg:space-x-5 space-y-3 lg:space-y-0">
       <h2 class="text-3xl font-semibold mb-8 text-center">Our <span className='text-primary font-bold'>Latest News</span> Here</h2>
       <section className="flex justify-evenly items-center lg:space-x-5 space-y-3 lg:space-y-0">
         <div className="shadow-xl p-3">
