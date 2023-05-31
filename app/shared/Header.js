@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
-import "../globals.css";
 import { RxCross2 } from "react-icons/rx";
 
 const Header = () => {
@@ -15,7 +14,6 @@ const Header = () => {
         <section>
           <h1 className="lg:text-xl text-lg">
             <Link href="/" key={pathname.name}>
-              {" "}
               LOGO
             </Link>
           </h1>
@@ -30,7 +28,6 @@ const Header = () => {
               }
             >
               <Link href="/" key={pathname.name}>
-                {" "}
                 HOME
               </Link>
             </li>
@@ -42,7 +39,6 @@ const Header = () => {
               }
             >
               <Link href="/blog" key={pathname.name}>
-                {" "}
                 BLOGS
               </Link>
             </li>
@@ -54,7 +50,6 @@ const Header = () => {
               }
             >
               <Link href="/shop" key={pathname.name}>
-                {" "}
                 SHOP
               </Link>
             </li>
@@ -77,7 +72,6 @@ const Header = () => {
               }
             >
               <Link href="/contact" key={pathname.name}>
-                {" "}
                 CONTACT
               </Link>
             </li>
@@ -87,7 +81,6 @@ const Header = () => {
           <ul className="flex justify-center items-center">
             <li className="lg:font-bold hidden lg:block font-semibold">
               <Link href="/login" key={pathname.name}>
-                {" "}
                 LOGIN
               </Link>
             </li>
@@ -95,7 +88,6 @@ const Header = () => {
               <button
                 onClick={() => setMobileNavbarToggle(!mobileNavbarToggle)}
               >
-                {" "}
                 {!mobileNavbarToggle ? (
                   <svg
                     data-aos="flip-left"
@@ -130,37 +122,31 @@ const Header = () => {
           <ul className="navbar-ul absolute top-0 w-full bg-[#5F2476] text-center text-primary ">
             <li className="font-semibold ">
               <Link href="/" key={pathname.name}>
-                {" "}
                 HOME
               </Link>
             </li>
             <li className="font-semibold">
               <Link href="/about" key={pathname.name}>
-                {" "}
                 ABOUT
               </Link>
             </li>
             <li className="font-semibold">
               <Link href="/blog" key={pathname.name}>
-                {" "}
                 BLOG
               </Link>
             </li>
             <li className="font-semibold">
               <Link href="/shop" key={pathname.name}>
-                {" "}
                 SHOP
               </Link>
             </li>
             <li className="font-semibold">
               <Link href="/contact" key={pathname.name}>
-                {" "}
                 CONTACT
               </Link>
             </li>
             <li className="font-semibold">
               <Link href="/login" key={pathname.name}>
-                {" "}
                 LOGIN
               </Link>
             </li>
