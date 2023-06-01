@@ -64,12 +64,12 @@ const BestSellingOnAmazon = () => {
       >
         {products.map((p) => {
           return (
-            <SwiperSlide className="text-center rounded-lg shadow-2xl border border-purple p-3">
+            <SwiperSlide className="text-center rounded-lg shadow-2xl border border-primary p-3">
               <div className="flex justify-center items-center">
                 <img src={p.img} alt="" />
               </div>
               <h1 className="my-3">{p.title}</h1>
-              <button className=" bg-gradient-to-r from-secondary to-purple  w-1/2 text-xl text-color py-2 rounded-xl ">
+              <button className=" bg-primary  w-1/2 text-xl text-color py-2 rounded-xl ">
                 BUY NOW
               </button>
             </SwiperSlide>

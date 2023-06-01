@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "../shared/Header";
 
-const page = () => {
+const About = () => {
   return (
-    <>
-      <h1>About</h1>
-    </>
+    <main>
+      <h1>hello</h1>
+    </main>
   );
 };
 
-export default page;
+export default About;
