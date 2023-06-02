@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .hover\:underline:hover {
-    text-decoration: underline;
-  }
-}
 
 
 body {

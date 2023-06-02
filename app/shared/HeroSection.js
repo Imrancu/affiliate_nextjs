@@ -44,7 +44,8 @@ const HeroSection = () => {
           captures the essence of staying up-to-date with the ever-changing
           fashion landscape.
         </p>
-        <Button>Get Started</Button>
+        <button 
+            className="mt-5 hover:bg-midnight hover:text-color text-midnight duration-500 cursor-pointer bg-primary text-xl font-semibold rounded-xl py-3 px-10">Get Started</button>
       </div>
       <div className="wrapper lg:w-1/2 lg:py-0 py-16">
         <div className="scene">
