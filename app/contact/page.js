@@ -28,6 +28,7 @@ const page = () => {
           console.log(error.text);
         }
       );
+    notify();
   };
 
   return (
@@ -65,7 +66,6 @@ const page = () => {
             ref={form}
             onSubmit={sendEmail}
             className="lg:w-1/2 w-full lg:mt-0 mt-9 bg-color p-7 rounded-xl shadow-xl"
-            
           >
             <ToastContainer />
             <div className="lg:flex gap-5">
@@ -102,7 +102,6 @@ const page = () => {
               className="w-full mt-5 hover:bg-midnight hover:text-color text-midnight duration-500 cursor-pointer bg-primary text-xl font-semibold rounded-xl p-3"
               type="submit"
               value="Send Message"
-              onClick={notify}
             />
           </form>
         </div>
